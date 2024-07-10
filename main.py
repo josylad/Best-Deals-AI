@@ -28,7 +28,7 @@ agent = ReActAgent.from_tools(
 )
 
 
-st.title("Best Deal Checker")
+st.title("Best Deal AI")
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
