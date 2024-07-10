@@ -2,6 +2,8 @@
 
 This is an AI Chatbot that helps you find the best deals on Amazon and Ebay. 
 
+This App is built with Llama Index, Streamlit and OpenAI GPT. 
+
 ### Working With Best Deals AI 
 
 1. You will need python installed and knowledge of python.
@@ -10,20 +12,21 @@ This is an AI Chatbot that helps you find the best deals on Amazon and Ebay.
 
 3. **Clone** the project.
 
-6. Once you are done with cloning and project is on your device.
+4. Once you are done with cloning and project is on your device.
 
-7. Get into the project folder (cd into project).
+5. Get into the project folder (cd into project).
 
-8. Installing Llama Index and other Modules
+6. Installing Llama Index and other Modules
 
     `python3 -m venv virtual`
-    
+
     `pip install -r requirements.txt`
 
-9. On your **bash** terminal Run the command:- 
+7. create a **.env** file with your Open AI key: `OPENAI_API_KEY:`
 
-run: 
-* $ streamlit run main.py 
+8. On your **bash** terminal Run the command:- 
+
+* streamlit run main.py 
 
 
 This project can be further improved, so feel free to make improvements and make a PR if you would like to contribute. 
