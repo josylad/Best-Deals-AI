@@ -30,16 +30,16 @@ def search_amazon(query):
     for result in results[:5]:
         try:
             title_element = result.find('h2')
-            price_whole = soup.find('span', class_='a-price-whole')
+            price_whole = result.find('span', class_='a-price-whole')
 
             if title_element and price_whole:
                 product_name = title_element.text.strip()
-                price_whole = soup.find('span', class_='a-price-whole')
+                price_whole = result.find('span', class_='a-price-whole')
                 price_whole = price_whole.text.strip()
-                price_decimal = soup.find('span', class_='a-price-fraction')
+                price_decimal = result.find('span', class_='a-price-fraction')
                 price_decimal = price_decimal.text.strip()
                 product_price = price_whole + price_decimal
-                product_link = soup.find('a', class_='a-link-normal s-no-hover s-underline-text s-underline-link-text s-link-style a-text-normal')
+                product_link = result.find('a', class_='a-link-normal s-no-hover s-underline-text s-underline-link-text s-link-style a-text-normal')
                 product_link = product_link['href']
                 product_url = "https://www.amazon.com" + str(product_link) + "&tag=gabuzee-20"
                 # print(product_url)

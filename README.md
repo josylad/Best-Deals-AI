@@ -22,7 +22,7 @@ This App is built with Llama Index, Streamlit and OpenAI GPT.
 
     `pip install -r requirements.txt`
 
-7. create a **.env** file with your Open AI key: `OPENAI_API_KEY:`
+7. create a **.env** file with your Open AI key: `OPENAI_API_KEY=`
 
 8. On your **bash** terminal Run the command:- 
 
